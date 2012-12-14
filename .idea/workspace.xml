@@ -20,10 +20,19 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="113" selection-start="988" selection-end="1093" vertical-scroll-proportion="0.5186441">
+            <state line="27" column="113" selection-start="988" selection-end="1093" vertical-scroll-proportion="-17.653847">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReadMe.md" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ReadMe.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="98" selection-start="571" selection-end="571" vertical-scroll-proportion="0.22392975">
               <folding />
             </state>
           </provider>
@@ -265,16 +274,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ReadMe.md">
+    <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="5" selection-start="548" selection-end="548" vertical-scroll-proportion="0.27991217">
+        <state line="27" column="113" selection-start="988" selection-end="1093" vertical-scroll-proportion="-17.653847">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/index.html">
+    <entry file="file://$PROJECT_DIR$/ReadMe.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="113" selection-start="988" selection-end="1093" vertical-scroll-proportion="0.5186441">
+        <state line="12" column="98" selection-start="571" selection-end="571" vertical-scroll-proportion="0.22392975">
           <folding />
         </state>
       </provider>

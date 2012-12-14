@@ -10,14 +10,7 @@ To use the directive:
 
 1. Include the gravatardirective.js file in your project and include a script tag in your wb page.
 2. Add the dependency 'ui-gravatar' to your AngularJS app.
-3. Add the following HTML where you want the image to be displayed.
-
-
-    <gravatar-image data-email="email" data-size="120" data-rating="pg" data-default="404" ></gravatar-image>
-
-    or
-
-    <div gravatar-image data-email="email" data-size="120" data-rating="pg" data-default="404" ></div>
+3. Add the directive where you want the image to be displayed. See sample app for directive usage.
 
 
 ## Configuration
