@@ -2,7 +2,7 @@
 
 This is a simple AngularJS Directive that takes an email address and creates an image tag to pull an avatar image form the Gravatar web site.
 
-A complete tutorial on how the directive was written is at [Creating a Simple AngularJS Directive]()
+A complete tutorial on how the directive was written is at [Creating a Simple AngularJS Directive](http://codingsmackdown.tv/blog/2012/12/14/creating-a-simple-angularjs-directive/)
 
 ## Usage
 

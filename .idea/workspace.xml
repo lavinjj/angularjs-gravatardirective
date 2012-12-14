@@ -29,10 +29,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ReadMe.md" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ReadMe.md" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ReadMe.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="98" selection-start="571" selection-end="571" vertical-scroll-proportion="0.22392975">
+            <state line="4" column="179" selection-start="359" selection-end="359" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="adjunctlist.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../angularjs-breweverywhere/app/adjuncts/adjunctlist.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="0" selection-start="511" selection-end="1064" vertical-scroll-proportion="-7.8461537">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="junk" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../angularjs-breweverywhere/app/adjuncts/junk">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="128" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -53,6 +71,7 @@
         <option value="$PROJECT_DIR$/src/gravatardirective.js" />
         <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/ReadMe.md" />
+        <option value="$PROJECT_DIR$/../angularjs-breweverywhere/app/adjuncts/junk" />
       </list>
     </option>
   </component>
@@ -127,7 +146,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../angularjs-breweverywhere/app/brewer/logincontroller.js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../angularjs-breweverywhere/app/adjuncts/adjunctlist.html" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -283,7 +302,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ReadMe.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="98" selection-start="571" selection-end="571" vertical-scroll-proportion="0.22392975">
+        <state line="4" column="179" selection-start="359" selection-end="359" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../angularjs-breweverywhere/app/adjuncts/adjunctlist.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="511" selection-end="1064" vertical-scroll-proportion="-7.8461537">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../angularjs-breweverywhere/app/adjuncts/junk">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="128" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
