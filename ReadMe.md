@@ -8,7 +8,7 @@ A complete tutorial on how the directive was written is at [Creating a Simple An
 
 To use the directive:
 
-1. Include the gravatardirective.js file in your project and include a script tag in your wb page.
+1. Include the gravatardirective.js and md5.js files in your project and include script tags for each in your wb page.
 2. Add the dependency 'ui-gravatar' to your AngularJS app.
 3. Add the directive where you want the image to be displayed. See sample app for directive usage.
 
@@ -22,5 +22,5 @@ You can configure the directive using the following attributes:
 * Rating - You can specify a rating to limit what avatars are displayed. The default rating is PG.
 * Default Image - You can specify a default image to display if the email address does not have an associated avatar. The default is 404.
 
-For more information about Gravatar Image request check out their [Developer's Reference](http://en.gravatar.com/site/implement/).
+For more information about the Gravatar Image request check out their [Developer's Reference](http://en.gravatar.com/site/implement/).
 
