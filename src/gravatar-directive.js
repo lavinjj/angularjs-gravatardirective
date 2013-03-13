@@ -8,8 +8,8 @@
  *
  */
 
-angular.module('ui-gravatar', []).
-    directive('gravatarImage', function () {
+angular.module('ui-gravatar', ['md5']).
+    directive('gravatarImage', ['md5', function (md5) {
         return {
             restrict:"EAC",
             link:function (scope, elm, attrs) {
@@ -19,7 +19,7 @@ angular.module('ui-gravatar', []).
                     // let's do nothing if the value comes in empty, null or undefined
                     if ((value !== null) && (value !== undefined) && (value !== '')) {
                         // convert the value to lower case and then to a md5 hash
-                        var hash = md5(value.toLowerCase());
+                        var hash = md5.createHash(value.toLowerCase());
                         // parse the size attribute
                         var size = attrs.size;
                         // default to 40 pixels if not set
@@ -44,4 +44,4 @@ angular.module('ui-gravatar', []).
                     }
                 });
             }};
-    });
+    }]);

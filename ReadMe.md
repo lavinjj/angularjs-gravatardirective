@@ -8,8 +8,8 @@ A complete tutorial on how the directive was written is at [Creating a Simple An
 
 To use the directive:
 
-1. Include the gravatardirective.js and md5.js files in your project and include script tags for each in your wb page.
-2. Add the dependency 'ui-gravatar' to your AngularJS app.
+1. Include the gravatar-directive.js and md5-service.js files in your project and include script tags for each in your wb page.
+2. Add the following dependencies to your AngularJS app; 'ui-gravatar' and 'md5'.
 3. Add the directive where you want the image to be displayed. See sample app for directive usage.
 
 
