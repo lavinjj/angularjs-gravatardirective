@@ -17,7 +17,7 @@ angular.module('ui-gravatar', ['md5']).
                 // watch to notify us when the value changes
                 scope.$watch(attrs.email, function (value) {
                     // let's do nothing if the value comes in empty, null or undefined
-                    if ((value !== null) && (value !== undefined) && (value !== '')) {
+                    if ((value !== null) && (value !== undefined) && (value !== '') && (null != value.match(/.*@.*\..{2}/))) {
                         // convert the value to lower case and then to a md5 hash
                         var hash = md5.createHash(value.toLowerCase());
                         // parse the size attribute
