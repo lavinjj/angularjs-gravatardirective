@@ -21,6 +21,7 @@ You can configure the directive using the following attributes:
 * Size - You can specify the size of the avatar image using the data-size attribute. The default is 40 pixels.
 * Rating - You can specify a rating to limit what avatars are displayed. The default rating is PG.
 * Default Image - You can specify a default image to display if the email address does not have an associated avatar. The default is 404.
+* Secure - You can optionally specify a true value in the data-secure attribute to request the SSL version of the avatar.
 
 For more information about the Gravatar Image request check out their [Developer's Reference](http://en.gravatar.com/site/implement/).
 
