@@ -40,7 +40,7 @@ angular.module('ui-gravatar', ['md5']).
                         // construct the tag to insert into the element
                         var tag = '<img class="gravatar-icon" src="' + (attrs.secure ? 'https://secure' : 'http://www' ) + '.gravatar.com/avatar/' + hash + '?s=' + size + '&r=' + rating + '&d=' + defaultUrl + '" >'
                         //remove any existing imgs 
-                        $(".gravatar-icon").remove();            
+                         $(elm).find(".gravatar-icon").remove();           
                         // insert the tag into the element
                         elm.append(tag);
                     }
