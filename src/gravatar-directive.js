@@ -37,10 +37,19 @@ angular.module('ui-gravatar', ['md5']).
                         if((defaultUrl === null) || (defaultUrl === undefined)|| (defaultUrl === '')) {
                             defaultUrl = '404';
                         }
+                        // parse any additional css classes
+                        var cssClass = attrs.cssClass;
+                        if((cssClass === null) || (cssClass === undefined)|| (cssClass === '')) {
+                          cssClass = 'gravatar-icon';
+                        }
+                        else {
+                          cssClass = cssClass + ' gravatar-icon';
+                        }
+
                         // construct the tag to insert into the element
-                        var tag = '<img class="gravatar-icon" src="' + (attrs.secure ? 'https://secure' : 'http://www' ) + '.gravatar.com/avatar/' + hash + '?s=' + size + '&r=' + rating + '&d=' + defaultUrl + '" >'
-                        //remove any existing imgs 
-                         $(elm).find(".gravatar-icon").remove();           
+                        var tag = '<img class="' + cssClass + '" src="' + (attrs.secure ? 'https://secure' : 'http://www' ) + '.gravatar.com/avatar/' + hash + '?s=' + size + '&r=' + rating + '&d=' + defaultUrl + '" >'
+                        //remove any existing imgs
+                         $(elm).find(".gravatar-icon").remove();
                         // insert the tag into the element
                         elm.append(tag);
                     }
