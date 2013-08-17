@@ -9,7 +9,17 @@
  */
 
 angular.module('ui-gravatar', ['md5']).
-    directive('gravatarImage', ['md5', function (md5) {
+    factory('gravatarImageService', function (md5) {
+        return {
+            getImageSrc : function(value, size, rating, defaultUrl, secure) {
+                // convert the value to lower case and then to a md5 hash
+                var hash = md5.createHash(value.toLowerCase());
+                var src = (secure ? 'https://secure' : 'http://www' ) + '.gravatar.com/avatar/' + hash + '?s=' + size + '&r=' + rating + '&d=' + defaultUrl;
+                return src;
+            }
+        };
+    }).
+    directive('gravatarImage', ['gravatarImageService', function (gravatarImageService) {
         return {
             restrict:"EAC",
             link:function (scope, elm, attrs) {
@@ -18,8 +28,6 @@ angular.module('ui-gravatar', ['md5']).
                 scope.$watch(attrs.email, function (value) {
                     // let's do nothing if the value comes in empty, null or undefined
                     if ((value !== null) && (value !== undefined) && (value !== '') && (null != value.match(/.*@.*\..{2}/))) {
-                        // convert the value to lower case and then to a md5 hash
-                        var hash = md5.createHash(value.toLowerCase());
                         // parse the size attribute
                         var size = attrs.size;
                         // default to 40 pixels if not set
@@ -37,8 +45,9 @@ angular.module('ui-gravatar', ['md5']).
                         if((defaultUrl === null) || (defaultUrl === undefined)|| (defaultUrl === '')) {
                             defaultUrl = '404';
                         }
+                        var src = gravatarImageService.getImageSrc(value, size, rating, defaultUrl, attrs.secure);
                         // construct the tag to insert into the element
-                        var tag = '<img class="gravatar-icon" src="' + (attrs.secure ? 'https://secure' : 'http://www' ) + '.gravatar.com/avatar/' + hash + '?s=' + size + '&r=' + rating + '&d=' + defaultUrl + '" >'
+                        var tag = '<img class="gravatar-icon" src="' + src + '" >';
                         //remove any existing imgs 
                         elm.find('img').remove();
                         // insert the tag into the element
