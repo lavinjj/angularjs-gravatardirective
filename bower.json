@@ -1,0 +1,10 @@
+{
+    "name": "angularjs-gravatardirective",
+    "version": "1.0.0",
+    "main": "src/gravatar-directive.js",
+    "ignore": [
+        "**/.*",
+        "app",
+        "config"
+    ]
+}
