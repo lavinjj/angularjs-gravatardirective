@@ -10,7 +10,7 @@ describe('gravatar directive', function() {
 
     beforeEach(inject(function ($rootScope, $compile) {
         // we might move this tpl into an html file as well...
-        elm = angular.element('<gravatar-image data-email="email" data-size="120" data-rating="pg" data-default="404" ></gravatar-image>');
+        elm = angular.element('<gravatar-image data-email="email" data-size="120" data-rating="pg" data-default="404" data-css-class="btn btn-large" ></gravatar-image>');
 
         scope = $rootScope;
         scope.email = 'jlavin@jimlavin.net';
@@ -47,5 +47,11 @@ describe('gravatar directive', function() {
         var image = elm.html();
 
         expect(image).toContain('d=404');
+    });
+
+    it('should add a parse the data-cc-class attribute and assign it to the class attribute', function () {
+        var cssClass = elm.html();
+
+        expect(cssClass).toContain('class="btn btn-large"');
     });
 });

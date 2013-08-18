@@ -29,25 +29,17 @@ angular.module('ui-gravatar', ['md5']).
                     // let's do nothing if the value comes in empty, null or undefined
                     if ((value !== null) && (value !== undefined) && (value !== '') && (null != value.match(/.*@.*\..{2}/))) {
                         // parse the size attribute
-                        var size = attrs.size;
-                        // default to 40 pixels if not set
-                        if((size=== null) || (size == undefined) || (size == '')){
-                            size = 40;
-                        }
+                        var size = attrs.size || 40;
                         // parse the ratings attribute
-                        var rating = attrs.rating;
-                        // default to pg if not set
-                        if((rating === null) || (rating === undefined)|| (rating === '')){
-                            rating = 'pg';
-                        }
+                        var rating = attrs.rating || 'pg';
                         // parse the default image url
-                        var defaultUrl = attrs.default;
-                        if((defaultUrl === null) || (defaultUrl === undefined)|| (defaultUrl === '')) {
-                            defaultUrl = '404';
-                        }
+                        var defaultUrl = attrs.default || '404';
+                        // parse css class
+                        var cssClass = attrs.cssClass || 'gravatar-icon';
+                        // get image src from service
                         var src = gravatarImageService.getImageSrc(value, size, rating, defaultUrl, attrs.secure);
                         // construct the tag to insert into the element
-                        var tag = '<img class="gravatar-icon" src="' + src + '" >';
+                        var tag = '<img class="' + cssClass + '" src="' + src + '" >';
                         //remove any existing imgs 
                         elm.find('img').remove();
                         // insert the tag into the element
