@@ -22,6 +22,7 @@ You can configure the directive using the following attributes:
 * Rating - You can specify a rating to limit what avatars are displayed. The default rating is PG.
 * Default Image - You can specify a default image to display if the email address does not have an associated avatar. The default is 404.
 * Secure - You can optionally specify a true value in the data-secure attribute to request the SSL version of the avatar.
+* cssClass - You can optionally specify css classes to apply to the resulting image. The default css class is gravatar-icon.
 
 For more information about the Gravatar Image request check out their [Developer's Reference](http://en.gravatar.com/site/implement/).
 
