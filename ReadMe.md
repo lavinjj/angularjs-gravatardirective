@@ -24,7 +24,13 @@ You can configure the directive using the following attributes:
 * Secure - You can optionally specify a true value in the data-secure attribute to request the SSL version of the avatar.
 * cssClass - You can optionally specify css classes to apply to the resulting image. The default css class is gravatar-icon.
 
+Note: All attributes must be proceeded with 'gravatar-' in order to keep from interfering with other angular library directives. See the directive unit tests and the sample app for an example.
+
 For more information about the Gravatar Image request check out their [Developer's Reference](http://en.gravatar.com/site/implement/).
+
+## Change Log
+
+### 1.1.0 - Added additional namespaces to all attributes to keep from interfering with other AngularJS Library Directives. Resolves Issue #13
 
 ## LICENSE
 

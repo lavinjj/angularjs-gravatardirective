@@ -10,7 +10,7 @@ describe('gravatar directive', function() {
 
     beforeEach(inject(function ($rootScope, $compile) {
         // we might move this tpl into an html file as well...
-        elm = angular.element('<gravatar-image data-email="email" data-size="120" data-rating="pg" data-default="404" data-css-class="btn btn-large" ></gravatar-image>');
+        elm = angular.element('<gravatar-image data-gravatar-email="email" data-gravatar-size="120" data-gravatar-rating="pg" data-gravatar-default="404" data-gravatar-css-class="btn btn-large" ></gravatar-image>');
 
         scope = $rootScope;
         scope.email = 'jlavin@jimlavin.net';
