@@ -36,7 +36,7 @@ angular.module('ui-gravatar', ['md5']).
                         // parse the ratings attribute
                         var rating = attrs.gravatarRating || 'pg';
                         // parse the default image url
-                        var defaultUrl = attrs.gravatarDefault || '404';
+                        var defaultUrl = attrs.gravatarDefault || 'identicon';
                         // parse css class
                         var cssClass = attrs.gravatarCssClass || 'gravatar-icon';
                         // get image src from service
