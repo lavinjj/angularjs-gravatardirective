@@ -8,8 +8,8 @@ A complete tutorial on how the directive was written is at [Creating a Simple An
 
 To use the directive:
 
-1. Include the gravatar-directive.js and md5-service.js files in your project and include script tags for each in your wb page.
-2. Add the following dependencies to your AngularJS app; 'ui-gravatar' and 'md5'.
+1. Include angularjs-gravatardirective.js or angularjs-gravatardirective.min.js files in your project and include script tags for each in your wb page.
+2. Add the following dependency to your AngularJS app; 'angularjs-gravatardirective'.
 3. Add the directive where you want the image to be displayed. See sample app for directive usage.
 
 
@@ -29,6 +29,10 @@ Note: All attributes must be proceeded with 'gravatar-' in order to keep from in
 For more information about the Gravatar Image request check out their [Developer's Reference](http://en.gravatar.com/site/implement/).
 
 ## Change Log
+
+### 1.3.0 - Restructured library structure to take advantage of angularjs-library yeoman generator to generate a single file for use.
+
+### 1.2.0 - Added pull request to move imageSrc to a service for use by external consumers.
 
 ### 1.1.0 - Added additional namespaces to all attributes to keep from interfering with other AngularJS Library Directives. Resolves Issue #13
 

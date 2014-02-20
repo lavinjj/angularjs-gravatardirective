@@ -13,11 +13,11 @@
 // *     example 1: md5.createHash('Kevin van Zonneveld');
 // *     returns 1: '6e658d4bfcb59cc13f96c14450ac40b9'
 
-angular.module('md5', []).factory('md5', [function() {
-
+angular.module('angularjs-gravatardirective.services')
+    .factory('md5', [function () {
         var md5 = {
 
-            createHash: function(str) {
+            createHash: function (str) {
 
                 var xl;
 

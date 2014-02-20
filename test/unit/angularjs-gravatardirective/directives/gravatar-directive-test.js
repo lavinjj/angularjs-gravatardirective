@@ -6,7 +6,7 @@ describe('gravatar directive', function() {
 
 
     // load the localization code
-    beforeEach(module('ui-gravatar'));
+    beforeEach(module('angularjs-gravatardirective'));
 
     beforeEach(inject(function ($rootScope, $compile) {
         // we might move this tpl into an html file as well...
