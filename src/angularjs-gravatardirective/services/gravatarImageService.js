@@ -1,5 +1,5 @@
 angular.module('angularjs-gravatardirective.services')
-    .factory('gravatarImageService', function (md5) {
+    .factory('gravatarImageService', ['md5', function (md5) {
         return {
             getImageSrc: function (value, size, rating, defaultUrl, secure) {
                 // convert the value to lower case and then to a md5 hash
@@ -11,4 +11,4 @@ angular.module('angularjs-gravatardirective.services')
                 return src;
             }
         };
-    });
+    }]);

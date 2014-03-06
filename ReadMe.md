@@ -30,13 +30,15 @@ For more information about the Gravatar Image request check out their [Developer
 
 ## Change Log
 
-### 1.3.1 - Addresses Issue #17 Hide the image, when loading fails. Now the image element will be removed from the DOM if the image fails to load.
+### v1.3.2 - Addresses Issue #18 'Unknown provider' error. the gravatarImageService was missing the minification array causing the service to not instantiate properly.
 
-### 1.3.0 - Restructured library structure to take advantage of angularjs-library yeoman generator to generate a single file for use.
+### v1.3.1 - Addresses Issue #17 Hide the image, when loading fails. Now the image element will be removed from the DOM if the image fails to load.
 
-### 1.2.0 - Added pull request to move imageSrc to a service for use by external consumers.
+### v1.3.0 - Restructured library structure to take advantage of angularjs-library yeoman generator to generate a single file for use.
 
-### 1.1.0 - Added additional namespaces to all attributes to keep from interfering with other AngularJS Library Directives. Resolves Issue #13
+### v1.2.0 - Added pull request to move imageSrc to a service for use by external consumers.
+
+### v1.1.0 - Added additional namespaces to all attributes to keep from interfering with other AngularJS Library Directives. Resolves Issue #13
 
 ## LICENSE
 

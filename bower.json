@@ -1,6 +1,6 @@
 {
     "name": "angularjs-gravatardirective",
-    "version": "1.3.1",
+    "version": "1.3.2",
     "dependencies": {
         "angular": "~1.2.12"
     },
