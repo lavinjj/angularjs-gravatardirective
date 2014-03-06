@@ -24,6 +24,10 @@ angular.module('angularjs-gravatardirective.directives')
                         elm.find('img').remove();
                         // insert the tag into the element
                         elm.append(tag);
+                        // add handler to remove if image fails to load
+                        elm.find('img').bind('error', function() {
+                            elm.find('img').remove();
+                        });
                     }
                 });
             }};

@@ -1,8 +1,6 @@
 describe('gravatar directive', function() {
     var elm;
-    var multi;
     var scope;
-    var localize;
 
 
     // load the localization code
@@ -43,7 +41,7 @@ describe('gravatar directive', function() {
         expect(image).toContain('r=pg');
     });
 
-    it('should add a default image parameter of 404 to the image tag', function () {
+    it('should add a default image parameter of identicon to the image tag', function () {
         var image = elm.html();
 
         expect(image).toContain('d=identicon');

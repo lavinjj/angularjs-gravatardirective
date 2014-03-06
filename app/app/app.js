@@ -4,5 +4,5 @@
 angular.module('myApp', ['angularjs-gravatardirective']);
 
 function myController($scope) {
-    $scope.email = 'jlavin@jimlavin.net';
+    $scope.email = 'jim.lavin@jimlavin.net';
 }

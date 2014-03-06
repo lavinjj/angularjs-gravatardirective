@@ -30,6 +30,8 @@ For more information about the Gravatar Image request check out their [Developer
 
 ## Change Log
 
+### 1.3.1 - Addresses Issue #17 Hide the image, when loading fails. Now the image element will be removed from the DOM if the image fails to load.
+
 ### 1.3.0 - Restructured library structure to take advantage of angularjs-library yeoman generator to generate a single file for use.
 
 ### 1.2.0 - Added pull request to move imageSrc to a service for use by external consumers.
