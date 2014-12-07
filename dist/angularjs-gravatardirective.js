@@ -33,8 +33,6 @@ angular.module('angularjs-gravatardirective.directives')
     return {
       restrict: "EAC",
       link: function (scope, elm, attrs) {
-        // by default the values will come in as undefined so we need to setup a
-        // watch to notify us when the value changes
         function ctrl(value, mode) {
           // check inputs
           if ((value === null) || (value === undefined) || (value === '')) {
@@ -67,9 +65,10 @@ angular.module('angularjs-gravatardirective.directives')
           elm.find('img').bind('error', function () {
             elm.find('img').remove();
           });
-
         }
 
+        // by default the values will come in as undefined so we need to setup a
+        // watch to notify us when the value changes
         scope.$watch(attrs.gravatarEmail, function (value) {
           ctrl(value, 'email');
         });
